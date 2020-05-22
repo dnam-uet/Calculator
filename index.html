@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="main">
+        <input id="result" readonly>
+        <table>
+            <tr>
+                <td><input type="button" value="AC" class="button calculate_row" id="clear"></td>
+                <td><input type="button" value="C" class="button calculate_row" id="backspace"></td>
+                <td><input type="button" value="%" class="button calculate calculate_row operator"></td>
+                <td><input type="button" value="/" class="button calculate calculate__col operator"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" class="button calculate"></td>
+                <td><input type="button" value="8" class="button calculate"></td>
+                <td><input type="button" value="9" class="button calculate"></td>
+                <td><input type="button" value="*" class="button calculate calculate__col operator"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" class="button calculate"></td>
+                <td><input type="button" value="5" class="button calculate"></td>
+                <td><input type="button" value="6" class="button calculate"></td>
+                <td><input type="button" value="-" class="button calculate calculate__col operator"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" class="button calculate"></td>
+                <td><input type="button" value="2" class="button calculate"></td>
+                <td><input type="button" value="3" class="button calculate"></td>
+                <td><input type="button" value="+" class="button calculate calculate__col operator"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="0" class="button button__0 calculate"></td>
+                <td><input type="button" value="." class="button calculate operator"></td>
+                <td><input type="button" value="=" class="button calculate__col" id="equal"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="./calculator.js"></script>
+</body>
+</html>
